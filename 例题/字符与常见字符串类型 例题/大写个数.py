@@ -1,0 +1,12 @@
+
+#统计字符串中有多少个大写字母
+
+li="AsdfgKHKgh" #字符串
+you=0 #统计大写字母个数，初始数为0
+for i in li:
+#如果遍历过程中出现大写字母，则you递增1    
+    if i.islower(): 
+        you+=1        
+print('小写字母有:{:d}个'.format(you))
+        
+  

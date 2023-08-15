@@ -1,0 +1,4 @@
+for i in range(1,10):
+    for k in range(1,i+1): #i与k操作联动关系,k随着i的变化而变化
+        print('%d*%d=%d\t' % (i,k,i*k),end='') #end=''使print()打印出的内容之间不换行
+    print() #print()自带换行功能

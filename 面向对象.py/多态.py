@@ -1,0 +1,35 @@
+#多态 含义
+"""
+让不同的类中具有相同功能的函数通过同一个函数名去调用
+
+"""
+
+
+#多态 条件
+"""
+继承：多态一定是发生在子类和父类之间；
+重写：子类重写了父类的方法。
+"""
+
+
+#我们创建两个类：熊（Bear）和狗（Dog），它们各自有一个独特的声音。
+#然后，我们创建两个实例，并用同样的方法调用它们看看它们各自的作用。
+
+class bear:
+    def sound(self):
+        print('wolf')
+        
+        
+class dog:
+    def sound(self):
+        print('wow')
+        
+def shout(obj):
+    obj.sound()
+    
+bearobj=bear()
+dogojb=dog()
+
+shout(bearobj)
+shout(dogojb)
+    

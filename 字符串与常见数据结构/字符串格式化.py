@@ -1,0 +1,3 @@
+age=18
+history='liming'
+print('%s已经%d岁了' % (history,age))

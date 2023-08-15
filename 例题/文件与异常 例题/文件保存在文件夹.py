@@ -1,0 +1,14 @@
+import shutil
+import os
+
+# 创建 文件excited.txt
+with open('e://excited.txt','w',encoding='utf-8') as f:
+    content='good monring'
+    f.write(content)
+    f.close()
+    
+#创建文件夹save    
+os.mkdir('e://save')
+
+#将文件excited.txt移动到save文件夹中
+shutil.move('e://excited.txt','e://save')

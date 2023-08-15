@@ -1,0 +1,18 @@
+
+class time:
+    def __init__(self,date,hour,minute): #定义变量date,hour,minute
+        self.date=date
+        self.hour=hour
+        self.minute=minute
+        
+    def times(self):
+        print('今天是%d号,现在是%d点%d分'%(self.date,self.hour,self.minute))
+        
+
+time1=time(22,22,10)
+time1.times()
+
+#结果
+"""
+今天是22号,现在是22点10分
+"""        
